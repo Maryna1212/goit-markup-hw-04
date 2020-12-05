@@ -112,6 +112,7 @@ ul {
   padding: 200px 0;
   margin-left: auto;
   margin-right: auto;
+  background-color: var(--c-dark-color);
   background-image: linear-gradient(
       to right,
       rgba(47, 48, 58, 0.4),
@@ -136,21 +137,6 @@ ul {
   letter-spacing: 0.06em;
 }
 
-.hero-feature {
-  font-weight: 700;
-  font-size: 14px;
-  line-height: 1.14;
-  letter-spacing: 0.03em;
-}
-
-.hero-description {
-  margin-top: 10px;
-  color: var(--title-text-color);
-  font-size: 14px;
-  line-height: 1.71;
-  letter-spacing: 0.03em;
-}
-
 /* Section features */
 
 .features {
@@ -165,6 +151,51 @@ ul {
 
 .features .feature-item:not(:last-child) {
   margin-right: 30px;
+}
+
+.feature-item::before {
+  display: block;
+  content: "";
+  margin-bottom: 30px;
+  height: 120px;
+  background-color: var(--c-light-grey-color);
+  background-repeat: no-repeat;
+  background-position: center;
+  border-radius: 4px;
+}
+
+.feature-item:nth-child(1)::before {
+  background-image: url("../images/antenna-1.svg");
+}
+
+.feature-item:nth-child(2)::before {
+  background-image: url("../images/clock-1.svg");
+}
+
+.feature-item:nth-child(3)::before {
+  background-image: url("../images/diagram-1.svg");
+}
+
+.feature-item:nth-child(4)::before {
+  background-image: url("../images/astronaut-1.svg");
+}
+
+.title-feature {
+  margin-top: 0;
+  margin-bottom: 10px;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+}
+
+.feature-description {
+  margin-top: 10px;
+  color: var(--title-text-color);
+  font-size: 14px;
+  line-height: 1.71;
+  letter-spacing: 0.03em;
 }
 
 /* Section Чем мы занимаемся */
