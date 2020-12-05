@@ -107,9 +107,28 @@ ul {
 /* Section Hero */
 
 .section-hero {
+  max-width: 1600px;
+  height: 600px;
   padding: 200px 0;
-  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
   background-image: url("../images/Img31.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  text-align: center;
+}
+
+.overlay-hero {
+  /* max-width: 1600px;
+  height: 600px;
+  margin-left: auto;
+  margin-right: auto;
+  background-image: url("../images/Img31.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-position: center;
+  background-size: cover; */
 }
 
 .title-hero {
