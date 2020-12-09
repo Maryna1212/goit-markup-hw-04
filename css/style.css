@@ -3,6 +3,7 @@
   --primary-white-color: #ffffff;
   --c-dark-color: #2f303a;
   --c-light-grey-color: #f5f4fa;
+  --link-accent-color: var(--accent-color);
 
   /* text */
   --primary-text-color: #212121;
@@ -11,6 +12,7 @@
   --text-white-color: var(--primary-white-color);
   --text-black-color: #000000;
   --text-dark-color: rgb(255, 255, 255, 0.6);
+  --main-icon-color: #afb1b8;
 }
 
 /* Утилиты */
@@ -221,6 +223,7 @@ ul {
 
 .team-item {
   padding-bottom: 30px;
+  height: 428px;
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
     0px 2px 1px rgba(0, 0, 0, 0.2);
 }
@@ -255,6 +258,47 @@ ul {
   letter-spacing: 0.06em;
   border-radius: 4px;
 }
+
+.list-team-icon {
+  display: flex;
+  margin-left: 32px;
+  margin-right: 32px;
+  margin-bottom: 30px;
+}
+
+.list-team-icon .list-icon:not(:last-child) {
+  margin-right: 10px;
+}
+
+.list-icon {
+  width: 44px;
+  height: 44px;
+}
+
+.link-icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+}
+
+.link-icon:hover,
+.link-icon:focus {
+  background-color: var(--link-accent-color);
+}
+
+.team-icon {
+  width: 20px;
+  height: 20px;
+  fill: var(--main-icon-color);
+}
+
+/* .team-icon:hover,
+.team-icon:focus {
+  fill: #ffffff;
+} */
 
 /* Footer */
 
