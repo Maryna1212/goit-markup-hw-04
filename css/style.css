@@ -306,6 +306,39 @@ ul {
   height: 20px;
 }
 
+/* Clients Section */
+
+.client-list {
+  display: flex;
+  padding-bottom: 94px;
+}
+
+.client-item {
+  width: 170px;
+  height: 90px;
+}
+
+.client-item:not(:last-child) {
+  margin-right: 30px;
+}
+
+.client-link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid #afb1b8;
+  box-sizing: border-box;
+  border-radius: 4px;
+  height: 100%;
+  fill: var(--main-icon-color);
+}
+
+.client-link:hover,
+.client-link:focus {
+  fill: var(--accent-color);
+  border-color: var(--accent-color);
+}
+
 /* Footer */
 
 .footer {
